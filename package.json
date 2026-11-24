@@ -1,0 +1,15 @@
+{
+  "name": "dm-logistic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DM Logístic — controle de estoque e logística para outlet (web + Android + iOS via Capacitor).",
+  "scripts": {
+    "dev": "npx --yes serve app -l 5173",
+    "seed:sql": "node scripts/gerar-seed-sql.mjs > supabase/seed.sql",
+    "mobile:setup": "npm i @capacitor/core @capacitor/android @capacitor/ios && npm i -D @capacitor/cli @capacitor/assets && npx cap add android && npx cap add ios",
+    "mobile:icons": "npx capacitor-assets generate --iconBackgroundColor '#1f1b2e' --splashBackgroundColor '#1f1b2e'",
+    "mobile:sync": "npx cap sync",
+    "android": "npx cap sync android && npx cap open android",
+    "ios": "npx cap sync ios && npx cap open ios"
+  }
+}

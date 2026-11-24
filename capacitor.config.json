@@ -1,0 +1,8 @@
+{
+  "appId": "br.com.dmlogistic.app",
+  "appName": "DM Logístic",
+  "webDir": "app",
+  "backgroundColor": "#1f1b2e",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "automatic" }
+}
